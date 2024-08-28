@@ -8,8 +8,12 @@ body {
     font-family: 'roboto-thin' ,'roboto' ,sans-serif;
 }
 
-
-
-li {
+main nav ul div li {
     list-style: none;
+}
+.carta li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
 }

@@ -1,29 +1,28 @@
-body {
-    background-image: url('../img/fundo-1.jpg');
+body .content-1 {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url('../img/fundo-2.jpg');
     background-position: center, center;
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 470px;
+    height: 900px;
     width: 100vw;
 }
 
 
-header {
+.content-1 header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 100px;
     width: 100%;
     padding: 15px;
-    background-color: rgb(79, 79, 78);
+    background-color: rgb(72, 72, 70);
     
 }
-header img {
+.content-1 header img {
     width: 100px;
     height: 100px;
 }
-header h1 {
-    /* background-color:  rgb(107, 105, 105); */
+.content-1 header h1 {
     color: #ffffff;
     border-radius: 15px;
     margin-left: 50px;
@@ -34,7 +33,7 @@ header h1 {
     width: 830px;
     font-weight: 500;
 }
-header p {
+.content-1 header p {
     background-color: rgb(43, 38, 38);
     color: #fbfb05;
     padding: 10px;
@@ -47,74 +46,294 @@ header p {
 }
 
 
-nav {
-    background-color: rgb(99, 99, 100);;
+.content-1 nav {
+    background-color: rgb(96, 96, 95);
     border-radius: 0px 0px 15px 15px;
-    margin: 0px 28vw;
+    margin: 0px auto;
     width: 668px;
     height: 70px;
 }
-nav .estrutura {
+.content-1 nav .estrutura {
     border-radius: 0px 0px 15px 15px;
     display: inline-flex;
     padding: 2px;
 }
-nav .estrutura .fundo li {
+.content-1 nav .estrutura .fundo li {
     justify-content: space-around; 
     font-size: 22.5px;
     margin: 20px;
     color: rgb(252, 232, 232);
 }
-nav .estrutura .fundo {
+.content-1 nav .estrutura .fundo {
     transition: 1s;
     cursor: pointer; 
 }
-nav .estrutura .fundo:hover {
+.content-1 nav .estrutura .fundo:hover {
     border-radius: 0px 0px 15px 15px;
     background-color: #fbfb30;
     transform: scale(1.08);
     color: black;
     /* transform: translate(0, 0.25rem); */
 }
-nav .estrutura .fundo li:hover {
+.content-1 nav .estrutura .fundo li:hover {
     color: black; 
 }
 
 
-.pagina-1 {
-    /* background-color: #3e5753; */
-    background: rgba(153, 165, 161, 0.886);
-    border: solid black 2px;
+.content-1 .container {
+    background: transparent;
+    border: solid rgba(70, 68, 68, 0.242) 2px;
     border-radius: 20px;
-    height: 65vh;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    height: 54vh;
     width: 70vw;
     justify-content: space-around;
-    margin: 50px auto;
+    align-items: center;
+    margin: 100px auto;
     display: flex;
 }
-.pagina-1 .textos {
-    /* background-color: #dcd9d9; */
+.content-1 .container .textos {
     margin: 50px;
     width: 510px;
-    /* height: 350px; */
 }
-.pagina-1 .textos .titulo {
+.content-1 .container .textos .titulo {
     font-family: 'Urbanist' ,sans-serif;
     font-weight: bold;
     color: #212322;
-    font-size: 50px;
+    font-size: 60px;
     display: block;
 }
-.pagina-1 .textos .paragrafo {
+.content-1 .container .textos .paragrafo {
     font-family: 'Figtree' , sans-serif;
     color: rgb(0, 0, 0);
-    font-size: 18px;
+    font-size: 23px;
     margin-top: 15px;
 }
-.pagina-1 .imagem {
+.content-1 .container .imagem {
     margin: 50px;
 }
-.pagina-1 .imagem img{
+.content-1 .container .imagem img{
     width: 350;
     border-radius: 20px;
+}
+
+
+.content-2 {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../img/fundo-1.jpg'); */
+    background-image: linear-gradient(180deg, #e3e6de, rgb(255, 255, 255)); 
+    background-size: 100%;
+    min-height: 90vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-2 h1 {
+    font-family: 'bebas neue', 'roboto', sans-serif;
+    margin: 0px 0px 20px;
+    font-size: 60px;
+    color: #171715;
+
+}
+.container-repertorio {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    background-color: #2d2d29;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    width: 450px;
+    display: flex;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 30px;
+    margin-bottom: 50px;
+}
+.container-repertorio .card {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    align-items: center;
+    background: #a5a9a7;
+    border-radius: 12px;
+    padding: 30px;
+    scroll-snap-align: start;
+}
+.container-repertorio .card h2{
+    margin-top: 12px;
+    color: #2d2d29;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+.container-repertorio .card .image {
+    border-radius: 30%;
+    border: solid 5px #2d2d29;
+}
+.container-repertorio .card .image img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 30%;
+    border: 5px solid #a5a9a7;
+}
+::-webkit-scrollbar {
+    height: 12px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(72, 72, 70);
+    border-radius: 25px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 25px;
+}
+
+
+.content-3 {
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #252525;
+    background-size: 100%;
+    height: 90vh;
+    width: 100vw;
+}
+.content-3 .titulo{
+    font-family: 'bebas neue', 'roboto', sans-serif;
+    margin: 50px 0px 20px 90px;
+    font-size: 70px;
+    color: #d5d5d1;
+}
+.container-introducao {
+    width: 100%;
+}
+.container-introducao .cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-introducao .cards .textos{
+    background-color: #cfcfce;
+    padding: 20px;
+    border-radius: 20px;
+    width: 40vw;
+}
+.container-introducao .cards .passos {
+    background-color: #cfcfce;
+    border-radius: 20px;
+    padding: 30px;
+    margin-left: 50px;
+    font-size: 25px;
+    height: 230px;
+}
+.container-introducao .cards .title {
+    font-family: 'bebas neue', 'roboto', sans-serif;
+}
+.container-introducao .cards .textinho {
+    font-family: 'roboto-thin', 'roboto', sans-serif;
+}
+.container-introducao .textos h1 {
+    font-size: 40px;
+}
+.container-introducao .textos p {
+    font-size: 20px;
+}
+
+
+.content-4 {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e3e6de;
+    background-size: 100%;
+    height: 70vh;
+    width: 100vw;
+}
+.content-4 .titulo {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: 'bebas neue', 'roboto', sans-serif;
+    margin: 50px 90px 20px 0px;
+    font-size: 70px;
+    color: #040404;
+}
+.container-desenvolvimento {
+    margin-top: 30px;
+    width: 100%
+}
+.container-desenvolvimento .cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-desenvolvimento .cards .passos {
+    background-color: rgb(172, 172, 187);
+    padding: 10px;
+    border-radius: 10px;
+    height: 30vh;
+    width: 21vw;
+}
+.container-desenvolvimento .cards .passos h1 {
+    font-family: 'bebas neue', 'roboto', sans-serif;
+    font-size: 40px;
+}
+.container-desenvolvimento .cards .passos p {
+    font-family: 'roboto-thin', 'roboto', sans-serif;
+    font-size: 20px;
+}
+
+
+.content-5 {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #252525;
+    background-size: 100%;
+    height: 110vh;
+    width: 100vw;
+}
+.content-5 .titulo {
+    font-family: 'bebas neue', 'roboto', sans-serif;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: white;
+}
+.container-conclusao {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-conclusao .cards {
+    color: white;
+}
+.container-conclusao .cards .carta {
+    background-color: #545451;
+    border-radius: 15px;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 20px 0px;
+    padding: 10px;
+}
+
+.container-conclusao .cards .titulu {
+    font-family: 'bebas neue', 'roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+.container-conclusao .cards .paragrafu {
+    font-family: 'roboto-thin', 'roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.container-conclusao .cards li {
+    font-family: 'roboto-thin', 'roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-top: 5px;
 }
