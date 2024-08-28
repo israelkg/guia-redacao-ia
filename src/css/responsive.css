@@ -108,6 +108,13 @@
 }
 
 @media (max-width: 395px) {
+    body .content-1 {
+        background-position: center, center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+    }
     .content-1 header h1 {
         font-size: 18px;
         margin-left: 0px;
@@ -126,5 +133,74 @@
     }
     .content-1 nav .estrutura .fundo:hover {
         transform: scale(1.18);
+    }
+    .content-1 .container {
+        height: 65vh;
+        width: 80vw;
+        display: block;
+    }
+    .content-1 .container .textos {
+        width: 300px;
+        margin: 0px 15px 0px 15px;
+    }
+    .content-1 .container .textos .titulo {
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    .content-1 .container .textos .paragrafo {
+        font-size: 15px;
+    }
+    .content-1 .container .imagem {
+        margin: 25px 15px 0px 15px;
+        align-items: center;
+    }
+    .content-1 .container .imagem img {  
+        width: 260px;
+        height: 260px;
+
+    }
+
+    .content-2 {
+        height: 40vh;
+    }
+    .container-repertorio {
+        width: 300px;
+    }
+    .container-repertorio .card h2{
+        font-size: 15px;
+    }
+    .container-repertorio .card {
+        padding: 15px;
+    }
+    .container-repertorio .card .image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .content-3 {
+        
+    }
+    .content-3 .titulo{
+        font-size: 60px;
+    }
+    .container-introducao .cards {
+        display: block;
+    }
+    .container-introducao .cards .textos{
+        padding: 20px;
+        width: 90vw;
+        height: ;
+    }
+    .container-introducao .cards .passos {
+        margin-left: 50px;
+        font-size: 18px;
+        height: 230px;
+        margin: 20px;
+    }
+    .container-introducao .textos h1 {
+        font-size: 35px;
+    }
+    .container-introducao .textos p {
+        font-size: 15px;
     }
 }
