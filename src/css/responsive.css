@@ -1,0 +1,130 @@
+@media (max-width: 1925px) {
+    .content-3 {
+        height: 65vh;
+    }
+    .content-4 {
+        height: 65vh;
+    }
+    .content-5 {
+        height: 95vh;
+    }
+}
+
+@media (max-width: 1370px) {
+    .content-1 .container .textos .titulo {
+        font-size: 50px;
+    }
+    .content-1 .container .textos .paragrafo {
+        font-size: 20px;
+    }
+    .content-1 .container .imagem img {
+    width: 250;
+    height: 300px;
+    border-radius: 20px;
+    }
+    .content-3 {
+        height: 100vh;
+    }
+    .content-5 {
+        height: 130vh;
+    }
+}
+
+@media (max-width: 1285px) {
+    .content-1 .container {
+        height: 50vh;
+        width: 75vw;
+    }
+    .content-3 {
+        height: 75vh;
+    }
+    .content-5 {
+        height: 100vh;
+    }
+}
+
+@media (max-height: 770px) {
+    .content-1 .container .imagem img{
+        height: 40vh;
+    }
+    .content-2 {
+        height: 120vh;
+    }
+    .content-3 {
+        height: 100vh;
+    }
+    .content-4 {
+        height: 70vh;
+    }
+    .content-5 {
+        height: 130vh;
+    }
+}
+
+@media (max-width: 1026px) {
+    main .content-1 {
+        height: 100px;
+    }
+    .content-1 header h1 {
+        font-size: 30px;
+    }
+    .content-1 header p {
+        font-size: 15px;
+    }
+    .content-1 nav {
+        width: 550px;
+        height: 57px;
+    }
+    .content-1 nav .estrutura .fundo li {
+        font-size: 19px;
+        margin: 15px;
+    }
+    .content-1 nav .estrutura .fundo:hover {
+        border-radius: 0px 0px 15px 15px;
+        background-color: #fbfb30;
+        transform: scale(1.08);
+    }
+    .content-1 .container .textos .titulo {
+        font-size: 38px;
+    }
+    .content-1 .container .textos .paragrafo {
+        font-size: 18px;
+    }
+
+    .content-3 {
+        height: 100vh;
+    }
+    .container-introducao .cards .passos {
+        font-size: 20px;
+        height: 200px;
+    }
+
+    .container-desenvolvimento .cards .passos h1 {
+        font-size: 30px;
+    }
+    .container-desenvolvimento .cards .passos p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 395px) {
+    .content-1 header h1 {
+        font-size: 18px;
+        margin-left: 0px;
+    }
+    .content-1 header p {
+        font-size: 10px;
+    }
+    .content-1 nav {
+        margin: 0px 18px;
+        width: 350px;
+        height: 35px;
+    }
+    .content-1 nav .estrutura .fundo li {
+        font-size: 13px;
+        margin: 7px;
+    }
+    .content-1 nav .estrutura .fundo:hover {
+        transform: scale(1.18);
+    }
+}

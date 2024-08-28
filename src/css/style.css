@@ -6,8 +6,6 @@ body .content-1 {
     height: 900px;
     width: 100vw;
 }
-
-
 .content-1 header {
     display: flex;
     justify-content: space-evenly;
@@ -16,7 +14,6 @@ body .content-1 {
     width: 100%;
     padding: 15px;
     background-color: rgb(72, 72, 70);
-    
 }
 .content-1 header img {
     width: 100px;
@@ -73,7 +70,6 @@ body .content-1 {
     background-color: #fbfb30;
     transform: scale(1.08);
     color: black;
-    /* transform: translate(0, 0.25rem); */
 }
 .content-1 nav .estrutura .fundo li:hover {
     color: black; 
