@@ -194,6 +194,9 @@
     .container-conclusao .cards .titulu {
         font-size: 35px;
     }
+    .feedback {
+        width: 750px;
+    }
 }
 
 
